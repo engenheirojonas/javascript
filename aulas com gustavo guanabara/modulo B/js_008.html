@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em mim</div>
+
+
+    <script>
+        /* 
+            Arvore DOM
+                é um conjunto de objectos do javascript para o tratamento de objectos visuais.
+
+                os objectos visuais serao chamados de elementos ou elementos html (as tags)
+
+            selecionar os elementos da minha arvore DOM
+                por MARCA
+                        getElementsByTagName()      -- para varios elementos do mesmo tipo --
+                
+                por ID
+                        getElementsById()      -- para varios elementos (id) do mesmo tipo --
+                        getElementById()       -- para apenas um elemento (id) --
+                
+                por NOME
+
+                por CLASSE
+                por SELETOR
+            */
+
+
+        //"innerText" é o comando que pega o texto que está dentro dum elemento ou duma marca
+
+        //"innerHTML" é o comando que pega o texto que esta dentro dum elemento (ou tag) e recopie todo formato da dita tag. isso replica o conteudo duma tag replicando o mesmo formato html incluindo das tags filhas do elemento selecionado.
+        
+        //este comando muda o primeiro paragrafo que aparecer no documento html. [0] primeiro paragrafo; [1] segundo paragrafo
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+
+        window.arlet(p1.innerHTML)
+        
+        //mudar cor do primeiro paragrafo.
+        p1.style.color = 'blue'
+
+        //mudar cor do documento
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+
+    </script>
+    
+</body>
+</html>
