@@ -19,6 +19,7 @@
     <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
     <div id="msg">Clique em mim</div>
     <div name="msg2">Clique em mim</div>
+    <div id="msg3">Clique em mim</div>
 
 
     <script>
@@ -37,6 +38,13 @@
         var x = window.document.getElementsByName('msg2')[0]
         x.innerText = 'olá, estou aproveitando muito'
         x.style.background = 'red'
+
+        var y = window.document.querySelector('div#msg3') //div#msg3 é configuraçao de css
+        y.innerText = 'tem sido muito bom'
+        y.style.background = 'violet'
+        
+
+       
         
 
     </script>
