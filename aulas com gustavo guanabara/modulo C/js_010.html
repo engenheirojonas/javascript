@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+         div#area {
+                font: normal 20pt arial;
+                background: rgb(52, 120, 221);
+                color: white;
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+     </style>
+</head>
+<body>
+    <div id="area">
+        intereja agora
+    </div>
+    
+    <script>
+
+        /* Eventos DOM
+
+        configurar eventos somente usando javascript
+            1. criamos a variavel que ira relacionar o javascrit ao elemento html.
+
+            2. criamos o comando: addEventLister('atributo ou comando ou type', açao) que ira relacionar a funçao(açao) para a variavel.
+                exemplo:  variavel.addEventListener('click', clicar)
+
+            3. editar funçoes relacionado aos tipos e os códigos do seu bloco.
+        */
+        var a = window.document.getElementById('area')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.background = 'gray'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu'
+            a.style.background = 'rgb(52, 120, 221)'
+        }
+    </script>
+</body>
+</html>

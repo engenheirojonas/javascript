@@ -14,10 +14,26 @@
             line-height: 200px;
             text-align: center;
         }
+
+        div#area2 {
+            font: normal 20pt arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
+    <H1>MOVER MOUSE PARA DENTRO, FORA DA DIV E CLICAR DENTRO DA DIV</H1>
     <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja comigo
+    </div>
+
+    <div id="area2" onclick="clicar2()" onmouseenter="entrar2()" onmouseout="sair2()">
         interaja comigo
     </div>
 
@@ -47,6 +63,7 @@
             
             */
         var a = window.document.getElementById('area') //liga o elemento javascript ao elemento html
+
         function clicar() {
             a.innerText = 'Você clicou' 
             a.style.background = 'red'
@@ -60,6 +77,25 @@
             a.innerText = 'Você Desististe?'
             a.style.background = 'green'
         }
+
+        //declaraçao de variavel para a segunda DIV
+        var b = window.document.getElementById('area2')
+
+        //funçoes para a segunda DIV
+        function clicar2() {
+            b.innerText = 'Você clicou' 
+            b.style.background = 'YELLOW'
+        }
+
+        function entrar2() {
+            b.innerText = 'já podes clicar'
+        }
+
+        function sair2() {
+            b.innerText = 'interaja de novo comigo'
+            b.style.background = 'RED'
+        }
+
 
     </script>
 </body>
