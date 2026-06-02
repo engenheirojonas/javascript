@@ -12,13 +12,18 @@ function verificar() {
     } else if (anoFuturo.value.length == 0 || Number(anoFuturo.value) <= anoAtual) {
         window.alert('UPPS! O futuro começa no próximo ano, insira um valor superior ao ano atual.') 
     } else {
-        var sexo = document.getElementsByTagName('radsex')
+        var sexo = document.getElementsByName('radsex')
         var genero = ''
         var calc = Number(anoFuturo.value) - Number(anoNasc.value)
         var idade = anoAtual - Number(anoNasc.value)
         
-        res.innerHTML = `O teu nome é ${nome.value}, identificamos que és ${genero} com ${idade} anos de idade, e antevemos que em ${anoFuturo.value} Você terás ${calc} anos`
-        
+        if (sexo[0].checked) {
+            genero = 'Homem'
+        } else if (sexo[1].checked) {
+            genero = 'Mulher'
+        }
+
+        res.innerHTML = `O teu nome é <strong>${nome.value}</strong>, identificamos que és <strong>${genero}</strong> com <strong>${idade}</strong> anos de idade, e antevemos que em <strong>${anoFuturo.value}</strong> Você terás <strong>${calc}</strong> anos.`
     }
     
 }
