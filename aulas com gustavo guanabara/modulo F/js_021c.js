@@ -27,6 +27,7 @@ let val = [5,8,2,9,3,10]
 //exemplo dum valor que nao esta no vetor
 let indice = num.indexOf(11)
 
+//se algo igual a -1 quer dizer que o valor não foi encontrado na lista
 if (indice == -1) {
     console.log('O valor não foi encontrado')
 } else {
