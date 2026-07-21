@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <div name="msg2">Clique em mim</div>
+    <div id="msg3">Clique em mim</div>
+
+    <script>
+     
+        //selecionar por Id
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+
+        /*
+        d.innerText = 'estou aguardando...' */
+
+        //segunda forma de substituir o conteudo de uma tag --- mas nao é muito recomendavel
+        window.document.getElementById('msg').innerText = 'olá, estou aprendendo'
+
+        //selecionar por nome
+        var x = window.document.getElementsByName('msg2')[0]
+        x.innerText = 'olá, estou aproveitando muito'
+        x.style.background = 'red'
+
+        var y = window.document.querySelector('div#msg3') //div#msg3 é configuraçao de css
+        y.innerText = 'Oi, tem sido muito bom'
+        y.style.background = 'violet'
+        
+    </script>
+    
+</body>
+</html>

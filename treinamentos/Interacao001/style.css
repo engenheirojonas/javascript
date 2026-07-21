@@ -1,0 +1,15 @@
+html {
+  background-color: green;
+  font-size: 40px;
+}
+
+ul {
+  background: red;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+    /*As CSS também estilizou parte do conteúdo que o JavaScript adicionou à página (a barra vermelha com a borda preta é o estilo que o CSS adicionou à lista gerada por JS), O SELETOR LI nao é de html mas sim do javascript*/
+li {
+  margin-left: 20px;
+}

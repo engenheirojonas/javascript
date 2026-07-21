@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(105,105,173);
+            color: rgb(238, 238, 238);
+            font: normal 20pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        /*
+        o comando "document.write" é para mandar escrever no doc html textos
+        
+        */
+      
+        // variavel.length    -para delimitar o numero de caracteres a ser usado pela variavel
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Seu nome tem ${nome.length} letras.<br> `) 
+
+        // variavel.toUpperCase()   - para colocar tudo em majuscula  
+        document.writeln(`Seu nome em maiuscula se escreve assim: <strong> ${nome.toUpperCase()} </strong> <br>  `)
+
+        // variavel.toLowerCase()    - para colocar tudo para minuscula
+        document.writeln(`Seu nome em maiuscula se escreve assim: <strong> ${nome.toLowerCase()} </strong> `)
+
+    </script>
+</body>
+</html>

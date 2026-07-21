@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(105,105,173);
+            color: rgb(238, 238, 238);
+            font: normal 20pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        /*
+        o comando "document.write" é para mandar escrever no doc html textos
+        
+        */
+      
+        // variavel.length    -para delimitar o numero de caracteres a ser usado pela variavel
+        var n1 = 1454.5
+        n1.toFixed(2)
+        document.write('2 numeros apos virgula, ' + n1)
+
+        n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+        document.write('2 numeros apos virgula, ' + n1)
+
+    </script>
+</body>
+</html>

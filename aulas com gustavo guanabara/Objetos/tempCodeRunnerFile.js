@@ -1,0 +1,2 @@
+eto
+        this.peso += p
